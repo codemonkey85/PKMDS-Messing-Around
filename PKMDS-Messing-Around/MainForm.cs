@@ -1,8 +1,6 @@
 ﻿using PKMDS_RBY;
 using System;
-using System.Data;
 using System.IO;
-using System.Linq;
 using System.Windows.Forms;
 using VeekunHelper;
 
@@ -40,6 +38,8 @@ namespace PKMDS_Messing_Around
             //    .Field<string>("name");
 
             VeekunDatabase.TestDapper();
+            //string generatedPoCos = VeekunDatabase.TestGeneratingPoCos();
+            //textBoxGeneratedPoCos.Text = generatedPoCos;
 
             //redSaveFileData.PlayerName = "Mike";
             //Console.WriteLine(redSaveFileData.PlayerName);
