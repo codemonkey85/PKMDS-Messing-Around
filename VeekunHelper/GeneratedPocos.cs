@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Enums = PKMDS_Enums.Enums;
 
 namespace VeekunHelper
 {
@@ -12,16 +10,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("is_main_series")]
         public bool IsMainSeries
         {
@@ -36,11 +37,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("ability_id")]
         public long AbilityId
         {
             get; set;
         }
+
         [Column("changed_in_version_group_id")]
         public long ChangedInVersionGroupId
         {
@@ -55,11 +58,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -74,16 +79,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("language_id")]
-        public long LanguageId
+        public Enums.Languages LanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
@@ -98,11 +106,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -117,16 +127,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("short_effect")]
         public string ShortEffect
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -141,46 +154,55 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("item_id")]
         public long ItemId
         {
             get; set;
         }
+
         [Column("firmness_id")]
         public long FirmnessId
         {
             get; set;
         }
+
         [Column("natural_gift_power")]
         public long NaturalGiftPower
         {
             get; set;
         }
+
         [Column("natural_gift_type_id")]
         public long NaturalGiftTypeId
         {
             get; set;
         }
+
         [Column("size")]
         public long Size
         {
             get; set;
         }
+
         [Column("max_harvest")]
         public long MaxHarvest
         {
             get; set;
         }
+
         [Column("growth_time")]
         public long GrowthTime
         {
             get; set;
         }
+
         [Column("soil_dryness")]
         public long SoilDryness
         {
             get; set;
         }
+
         [Column("smoothness")]
         public long Smoothness
         {
@@ -195,6 +217,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -209,11 +232,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -228,11 +253,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("contest_type_id")]
         public long ContestTypeId
         {
             get; set;
         }
+
         [Column("flavor")]
         public long Flavor
         {
@@ -247,11 +274,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("message")]
         public string Message
         {
@@ -266,11 +295,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("stat_id")]
         public long StatId
         {
             get; set;
         }
+
         [Column("gene_mod_5")]
         public long GeneMod5
         {
@@ -285,11 +316,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -304,6 +337,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("warrior_id")]
         public long WarriorId
         {
@@ -318,6 +352,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -332,11 +367,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -351,11 +388,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("type_id")]
         public long TypeId
         {
@@ -370,11 +409,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("max_link")]
         public long MaxLink
         {
@@ -389,31 +430,37 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("power")]
         public long Power
         {
             get; set;
         }
+
         [Column("accuracy")]
         public long Accuracy
         {
             get; set;
         }
+
         [Column("effect_chance")]
         public long EffectChance
         {
             get; set;
         }
+
         [Column("effect_id")]
         public long EffectId
         {
             get; set;
         }
+
         [Column("range_id")]
         public long RangeId
         {
             get; set;
         }
+
         [Column("displacement_id")]
         public long DisplacementId
         {
@@ -428,21 +475,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("short_effect")]
         public string ShortEffect
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -457,11 +508,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("affects_target")]
         public bool AffectsTarget
         {
@@ -476,16 +529,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("short_effect")]
         public string ShortEffect
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -509,16 +565,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -533,11 +592,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("targets")]
         public long Target
         {
@@ -548,15 +609,17 @@ namespace VeekunHelper
     public class ConquestPokemonAbility
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("slot")]
         public long Slot
         {
             get; set;
         }
+
         [Column("ability_id")]
         public long AbilityId
         {
@@ -567,40 +630,47 @@ namespace VeekunHelper
     public class ConquestPokemonEvolution
     {
         [Column("evolved_species_id")]
-        public long EvolvedSpeciesId
+        public Enums.Species EvolvedSpeciesId
         {
             get; set;
         }
+
         [Column("required_stat_id")]
         public long RequiredStatId
         {
             get; set;
         }
+
         [Column("minimum_stat")]
         public long MinimumStat
         {
             get; set;
         }
+
         [Column("minimum_link")]
         public long MinimumLink
         {
             get; set;
         }
+
         [Column("kingdom_id")]
         public long KingdomId
         {
             get; set;
         }
+
         [Column("warrior_gender_id")]
         public long WarriorGenderId
         {
             get; set;
         }
+
         [Column("item_id")]
         public long ItemId
         {
             get; set;
         }
+
         [Column("recruiting_ko_required")]
         public bool RecruitingKoRequired
         {
@@ -611,10 +681,11 @@ namespace VeekunHelper
     public class ConquestPokemonMove
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("move_id")]
         public long MoveId
         {
@@ -625,15 +696,17 @@ namespace VeekunHelper
     public class ConquestPokemonStat
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("conquest_stat_id")]
         public long ConquestStatId
         {
             get; set;
         }
+
         [Column("base_stat")]
         public long BaseStat
         {
@@ -648,11 +721,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -667,11 +742,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("is_base")]
         public bool IsBase
         {
@@ -686,8 +763,9 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
@@ -700,6 +778,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("present_warrior_id")]
         public long PresentWarriorId
         {
@@ -714,6 +793,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -728,11 +808,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -747,11 +829,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("warrior_stat_id")]
         public long WarriorStatId
         {
             get; set;
         }
+
         [Column("base_stat")]
         public long BaseStat
         {
@@ -766,16 +850,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("warrior_id")]
         public long WarriorId
         {
             get; set;
         }
+
         [Column("rank")]
         public long Rank
         {
             get; set;
         }
+
         [Column("skill_id")]
         public long SkillId
         {
@@ -790,11 +877,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -809,6 +898,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -823,11 +913,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("type_id")]
         public long TypeId
         {
             get; set;
         }
+
         [Column("slot")]
         public long Slot
         {
@@ -842,11 +934,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -861,6 +955,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -875,46 +970,55 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("is_automatic")]
         public bool IsAutomatic
         {
             get; set;
         }
+
         [Column("required_link")]
         public long RequiredLink
         {
             get; set;
         }
+
         [Column("completed_episode_id")]
         public long CompletedEpisodeId
         {
             get; set;
         }
+
         [Column("current_episode_id")]
         public long CurrentEpisodeId
         {
             get; set;
         }
+
         [Column("distant_warrior_id")]
         public long DistantWarriorId
         {
             get; set;
         }
+
         [Column("female_warlord_count")]
         public long FemaleWarlordCount
         {
             get; set;
         }
+
         [Column("pokemon_count")]
         public long PokemonCount
         {
             get; set;
         }
+
         [Column("collection_type_id")]
         public long CollectionTypeId
         {
             get; set;
         }
+
         [Column("warrior_count")]
         public long WarriorCount
         {
@@ -929,16 +1033,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("gender_id")]
         public long GenderId
         {
             get; set;
         }
+
         [Column("archetype_id")]
         public long ArchetypeId
         {
@@ -949,12 +1056,13 @@ namespace VeekunHelper
     public class ContestCombo
     {
         [Column("first_move_id")]
-        public long FirstMoveId
+        public Enums.Moves FirstMoveId
         {
             get; set;
         }
+
         [Column("second_move_id")]
-        public long SecondMoveId
+        public Enums.Moves SecondMoveId
         {
             get; set;
         }
@@ -967,16 +1075,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -991,11 +1102,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("appeal")]
         public short Appeal
         {
             get; set;
         }
+
         [Column("jam")]
         public short Jam
         {
@@ -1010,21 +1123,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("flavor")]
         public string Flavor
         {
             get; set;
         }
+
         [Column("color")]
         public string Color
         {
@@ -1039,6 +1156,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1053,11 +1171,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1072,6 +1192,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1086,11 +1207,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1105,6 +1228,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("encounter_condition_value_id")]
         public long EncounterConditionValueId
         {
@@ -1119,11 +1243,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1138,16 +1264,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("encounter_condition_id")]
         public long EncounterConditionId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("is_default")]
         public bool IsDefault
         {
@@ -1162,6 +1291,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1176,11 +1306,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1195,11 +1327,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
@@ -1214,21 +1348,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("encounter_method_id")]
         public long EncounterMethodId
         {
             get; set;
         }
+
         [Column("slot")]
         public long Slot
         {
             get; set;
         }
+
         [Column("rarity")]
         public long Rarity
         {
@@ -1243,31 +1381,37 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_id")]
         public long VersionId
         {
             get; set;
         }
+
         [Column("location_area_id")]
         public long LocationAreaId
         {
             get; set;
         }
+
         [Column("encounter_slot_id")]
         public long EncounterSlotId
         {
             get; set;
         }
+
         [Column("pokemon_id")]
         public long PokemonId
         {
             get; set;
         }
+
         [Column("min_level")]
         public long MinLevel
         {
             get; set;
         }
+
         [Column("max_level")]
         public long MaxLevel
         {
@@ -1282,6 +1426,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("baby_trigger_item_id")]
         public long BabyTriggerItemId
         {
@@ -1296,11 +1441,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1315,6 +1462,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1329,11 +1477,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("level")]
         public long Level
         {
             get; set;
         }
+
         [Column("experience")]
         public long ExperienceValue
         {
@@ -1348,6 +1498,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1362,11 +1513,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1381,11 +1534,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("main_region_id")]
         public long MainRegionId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1400,11 +1555,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1419,11 +1576,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("formula")]
         public string Formula
         {
@@ -1438,11 +1597,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pocket_id")]
         public long PocketId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1457,11 +1618,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1476,6 +1639,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("item_flag_id")]
         public long ItemFlagId
         {
@@ -1490,16 +1654,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -1514,6 +1681,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1528,11 +1696,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("flavor_summary")]
         public string FlavorSummary
         {
@@ -1547,16 +1717,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("language_id")]
-        public long LanguageId
+        public Enums.Languages LanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
@@ -1571,11 +1744,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -1599,11 +1774,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -1618,11 +1795,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1637,11 +1816,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1656,6 +1837,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1670,16 +1852,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("short_effect")]
         public string ShortEffect
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -1694,26 +1879,31 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("category_id")]
         public long CategoryId
         {
             get; set;
         }
+
         [Column("cost")]
         public long Cost
         {
             get; set;
         }
+
         [Column("fling_power")]
         public long FlingPower
         {
             get; set;
         }
+
         [Column("fling_effect_id")]
         public long FlingEffectId
         {
@@ -1724,15 +1914,17 @@ namespace VeekunHelper
     public class LanguageName
     {
         [Column("language_id")]
-        public long LanguageId
+        public Enums.Languages LanguageId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1747,26 +1939,31 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("iso639")]
         public string Iso639
         {
             get; set;
         }
+
         [Column("iso3166")]
         public string Iso3166
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("official")]
         public bool Official
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
@@ -1781,16 +1978,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("encounter_method_id")]
         public long EncounterMethodId
         {
             get; set;
         }
+
         [Column("version_id")]
         public long VersionId
         {
             get; set;
         }
+
         [Column("rate")]
         public long Rate
         {
@@ -1805,11 +2005,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1824,16 +2026,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("location_id")]
         public long LocationId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1848,11 +2053,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -1867,11 +2074,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1886,11 +2095,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("region_id")]
         public long RegionId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1905,18 +2116,21 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("item_id")]
         public long ItemId
         {
             get; set;
         }
+
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
@@ -1929,11 +2143,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -1948,6 +2164,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -1958,50 +2175,59 @@ namespace VeekunHelper
     public class MoveChangelog
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("changed_in_version_group_id")]
         public long ChangedInVersionGroupId
         {
             get; set;
         }
+
         [Column("type_id")]
         public long TypeId
         {
             get; set;
         }
+
         [Column("power")]
         public short Power
         {
             get; set;
         }
+
         [Column("pp")]
         public short Pp
         {
             get; set;
         }
+
         [Column("accuracy")]
         public short Accuracy
         {
             get; set;
         }
+
         [Column("priority")]
         public short Priority
         {
             get; set;
         }
+
         [Column("target_id")]
         public long TargetId
         {
             get; set;
         }
+
         [Column("effect_id")]
         public long EffectId
         {
             get; set;
         }
+
         [Column("effect_chance")]
         public long EffectChance
         {
@@ -2016,16 +2242,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -2040,6 +2269,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2054,11 +2284,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("effect_id")]
         public long EffectId
         {
             get; set;
         }
+
         [Column("changed_in_version_group_id")]
         public long ChangedInVersionGroupId
         {
@@ -2073,11 +2305,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -2092,16 +2326,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("short_effect")]
         public string ShortEffect
         {
             get; set;
         }
+
         [Column("effect")]
         public string Effect
         {
@@ -2121,10 +2358,11 @@ namespace VeekunHelper
     public class MoveFlagMap
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("move_flag_id")]
         public long MoveFlagId
         {
@@ -2139,16 +2377,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -2163,6 +2404,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2173,15 +2415,17 @@ namespace VeekunHelper
     public class MoveFlavorSummary
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("flavor_summary")]
         public string FlavorSummary
         {
@@ -2192,20 +2436,23 @@ namespace VeekunHelper
     public class MoveFlavorText
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("language_id")]
-        public long LanguageId
+        public Enums.Languages LanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
@@ -2216,65 +2463,77 @@ namespace VeekunHelper
     public class MoveMeta
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("meta_category_id")]
         public long MetaCategoryId
         {
             get; set;
         }
+
         [Column("meta_ailment_id")]
         public long MetaAilmentId
         {
             get; set;
         }
+
         [Column("min_hits")]
         public long MinHit
         {
             get; set;
         }
+
         [Column("max_hits")]
         public long MaxHit
         {
             get; set;
         }
+
         [Column("min_turns")]
         public long MinTurn
         {
             get; set;
         }
+
         [Column("max_turns")]
         public long MaxTurn
         {
             get; set;
         }
+
         [Column("drain")]
         public long Drain
         {
             get; set;
         }
+
         [Column("healing")]
         public long Healing
         {
             get; set;
         }
+
         [Column("crit_rate")]
         public long CritRate
         {
             get; set;
         }
+
         [Column("ailment_chance")]
         public long AilmentChance
         {
             get; set;
         }
+
         [Column("flinch_chance")]
         public long FlinchChance
         {
             get; set;
         }
+
         [Column("stat_chance")]
         public long StatChance
         {
@@ -2289,11 +2548,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2308,6 +2569,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2322,6 +2584,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2336,11 +2599,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -2351,15 +2616,17 @@ namespace VeekunHelper
     public class MoveMetaStatChange
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("stat_id")]
         public long StatId
         {
             get; set;
         }
+
         [Column("change")]
         public long Change
         {
@@ -2370,15 +2637,17 @@ namespace VeekunHelper
     public class MoveName
     {
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2393,16 +2662,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -2417,6 +2689,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2427,75 +2700,89 @@ namespace VeekunHelper
     public class Move
     {
         [Column("id")]
-        public long Id
+        public Enums.Moves Id
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("type_id")]
         public long TypeId
         {
             get; set;
         }
+
         [Column("power")]
         public short Power
         {
             get; set;
         }
+
         [Column("pp")]
         public short Pp
         {
             get; set;
         }
+
         [Column("accuracy")]
         public short Accuracy
         {
             get; set;
         }
+
         [Column("priority")]
         public short Priority
         {
             get; set;
         }
+
         [Column("target_id")]
         public long TargetId
         {
             get; set;
         }
+
         [Column("damage_class_id")]
         public long DamageClassId
         {
             get; set;
         }
+
         [Column("effect_id")]
         public long EffectId
         {
             get; set;
         }
+
         [Column("effect_chance")]
         public long EffectChance
         {
             get; set;
         }
+
         [Column("contest_type_id")]
         public long ContestTypeId
         {
             get; set;
         }
+
         [Column("contest_effect_id")]
         public long ContestEffectId
         {
             get; set;
         }
+
         [Column("super_contest_effect_id")]
         public long SuperContestEffectId
         {
@@ -2510,16 +2797,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("move_battle_style_id")]
         public long MoveBattleStyleId
         {
             get; set;
         }
+
         [Column("low_hp_preference")]
         public long LowHpPreference
         {
             get; set;
         }
+
         [Column("high_hp_preference")]
         public long HighHpPreference
         {
@@ -2534,11 +2824,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2553,11 +2845,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pokeathlon_stat_id")]
         public long PokeathlonStatId
         {
             get; set;
         }
+
         [Column("max_change")]
         public long MaxChange
         {
@@ -2572,31 +2866,37 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("decreased_stat_id")]
         public long DecreasedStatId
         {
             get; set;
         }
+
         [Column("increased_stat_id")]
         public long IncreasedStatId
         {
             get; set;
         }
+
         [Column("hates_flavor_id")]
         public long HatesFlavorId
         {
             get; set;
         }
+
         [Column("likes_flavor_id")]
         public long LikesFlavorId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -2607,20 +2907,23 @@ namespace VeekunHelper
     public class PalPark
     {
         [Column("species_id")]
-        public long SpeciesId
+        public Enums.Species SpeciesId
         {
             get; set;
         }
+
         [Column("area_id")]
         public long AreaId
         {
             get; set;
         }
+
         [Column("base_score")]
         public long BaseScore
         {
             get; set;
         }
+
         [Column("rate")]
         public long Rate
         {
@@ -2635,11 +2938,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2654,6 +2959,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2668,11 +2974,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2687,6 +2995,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2701,16 +3010,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -2725,6 +3037,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
@@ -2739,16 +3052,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("region_id")]
         public long RegionId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("is_main_series")]
         public bool IsMainSeries
         {
@@ -2763,36 +3079,43 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("species_id")]
-        public long SpeciesId
+        public Enums.Species SpeciesId
         {
             get; set;
         }
+
         [Column("height")]
         public long Height
         {
             get; set;
         }
+
         [Column("weight")]
         public long Weight
         {
             get; set;
         }
+
         [Column("base_experience")]
         public long BaseExperience
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
             get; set;
         }
+
         [Column("is_default")]
         public bool IsDefault
         {
@@ -2807,16 +3130,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("ability_id")]
         public long AbilityId
         {
             get; set;
         }
+
         [Column("is_hidden")]
         public bool IsHidden
         {
             get; set;
         }
+
         [Column("slot")]
         public long Slot
         {
@@ -2831,11 +3157,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -2850,6 +3178,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -2860,15 +3189,17 @@ namespace VeekunHelper
     public class PokemonDexNumber
     {
         [Column("species_id")]
-        public long SpeciesId
+        public Enums.Species SpeciesId
         {
             get; set;
         }
+
         [Column("pokedex_id")]
         public long PokedexId
         {
             get; set;
         }
+
         [Column("pokedex_number")]
         public long PokedexNumber
         {
@@ -2879,10 +3210,11 @@ namespace VeekunHelper
     public class PokemonEggGroup
     {
         [Column("species_id")]
-        public long SpeciesId
+        public Enums.Species SpeciesId
         {
             get; set;
         }
+
         [Column("egg_group_id")]
         public long EggGroupId
         {
@@ -2897,96 +3229,115 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("evolved_species_id")]
-        public long EvolvedSpeciesId
+        public Enums.Species EvolvedSpeciesId
         {
             get; set;
         }
+
         [Column("evolution_trigger_id")]
         public long EvolutionTriggerId
         {
             get; set;
         }
+
         [Column("trigger_item_id")]
         public long TriggerItemId
         {
             get; set;
         }
+
         [Column("minimum_level")]
         public long MinimumLevel
         {
             get; set;
         }
+
         [Column("gender_id")]
         public long GenderId
         {
             get; set;
         }
+
         [Column("location_id")]
         public long LocationId
         {
             get; set;
         }
+
         [Column("held_item_id")]
         public long HeldItemId
         {
             get; set;
         }
+
         [Column("time_of_day")]
         public string TimeOfDay
         {
             get; set;
         }
+
         [Column("known_move_id")]
-        public long KnownMoveId
+        public Enums.Moves KnownMoveId
         {
             get; set;
         }
+
         [Column("known_move_type_id")]
         public long KnownMoveTypeId
         {
             get; set;
         }
+
         [Column("minimum_happiness")]
         public long MinimumHappiness
         {
             get; set;
         }
+
         [Column("minimum_beauty")]
         public long MinimumBeauty
         {
             get; set;
         }
+
         [Column("minimum_affection")]
         public long MinimumAffection
         {
             get; set;
         }
+
         [Column("relative_physical_stats")]
         public long RelativePhysicalStat
         {
             get; set;
         }
+
         [Column("party_species_id")]
-        public long PartySpeciesId
+        public Enums.Species PartySpeciesId
         {
             get; set;
         }
+
         [Column("party_type_id")]
-        public long PartyTypeId
+        public Enums.Species PartyTypeId
         {
             get; set;
         }
+
         [Column("trade_species_id")]
-        public long TradeSpeciesId
+        public Enums.Species TradeSpeciesId
         {
             get; set;
         }
+
         [Column("needs_overworld_rain")]
         public bool NeedsOverworldRain
         {
             get; set;
         }
+
         [Column("turn_upside_down")]
         public bool TurnUpsideDown
         {
@@ -3001,11 +3352,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -3020,16 +3373,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("form_name")]
         public string FormName
         {
             get; set;
         }
+
         [Column("pokemon_name")]
         public string PokemonName
         {
@@ -3044,21 +3400,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pokeathlon_stat_id")]
         public long PokeathlonStatId
         {
             get; set;
         }
+
         [Column("minimum_stat")]
         public long MinimumStat
         {
             get; set;
         }
+
         [Column("base_stat")]
         public long BaseStat
         {
             get; set;
         }
+
         [Column("maximum_stat")]
         public long MaximumStat
         {
@@ -3073,46 +3433,55 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("form_identifier")]
         public string FormIdentifier
         {
             get; set;
         }
+
         [Column("pokemon_id")]
         public long PokemonId
         {
             get; set;
         }
+
         [Column("introduced_in_version_group_id")]
         public long IntroducedInVersionGroupId
         {
             get; set;
         }
+
         [Column("is_default")]
         public bool IsDefault
         {
             get; set;
         }
+
         [Column("is_battle_only")]
         public bool IsBattleOnly
         {
             get; set;
         }
+
         [Column("is_mega")]
         public bool IsMega
         {
             get; set;
         }
+
         [Column("form_order")]
         public long FormOrder
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
@@ -3127,11 +3496,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_id")]
         public long VersionId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -3146,11 +3517,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -3165,6 +3538,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -3179,16 +3553,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_id")]
         public long VersionId
         {
             get; set;
         }
+
         [Column("item_id")]
         public long ItemId
         {
             get; set;
         }
+
         [Column("rarity")]
         public long Rarity
         {
@@ -3203,16 +3580,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -3227,6 +3607,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -3241,26 +3622,31 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("move_id")]
-        public long MoveId
+        public Enums.Moves MoveId
         {
             get; set;
         }
+
         [Column("pokemon_move_method_id")]
         public long PokemonMoveMethodId
         {
             get; set;
         }
+
         [Column("level")]
         public long Level
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
@@ -3275,21 +3661,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("awesome_name")]
         public string AwesomeName
         {
             get; set;
         }
+
         [Column("description")]
         public string Description
         {
@@ -3304,6 +3694,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -3318,86 +3709,103 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("evolves_from_species_id")]
-        public long EvolvesFromSpeciesId
+        public Enums.Species EvolvesFromSpeciesId
         {
             get; set;
         }
+
         [Column("evolution_chain_id")]
         public long EvolutionChainId
         {
             get; set;
         }
+
         [Column("color_id")]
         public long ColorId
         {
             get; set;
         }
+
         [Column("shape_id")]
         public long ShapeId
         {
             get; set;
         }
+
         [Column("habitat_id")]
         public long HabitatId
         {
             get; set;
         }
+
         [Column("gender_rate")]
         public long GenderRate
         {
             get; set;
         }
+
         [Column("capture_rate")]
         public long CaptureRate
         {
             get; set;
         }
+
         [Column("base_happiness")]
         public long BaseHappiness
         {
             get; set;
         }
+
         [Column("is_baby")]
         public bool IsBaby
         {
             get; set;
         }
+
         [Column("hatch_counter")]
         public long HatchCounter
         {
             get; set;
         }
+
         [Column("has_gender_differences")]
         public bool HasGenderDifference
         {
             get; set;
         }
+
         [Column("growth_rate_id")]
         public long GrowthRateId
         {
             get; set;
         }
+
         [Column("forms_switchable")]
         public bool FormsSwitchable
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
             get; set;
         }
+
         [Column("conquest_order")]
         public long ConquestOrder
         {
@@ -3408,15 +3816,17 @@ namespace VeekunHelper
     public class PokemonSpeciesFlavorSummary
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("flavor_summary")]
         public string FlavorSummary
         {
@@ -3427,20 +3837,23 @@ namespace VeekunHelper
     public class PokemonSpeciesFlavorText
     {
         [Column("species_id")]
-        public long SpeciesId
+        public Enums.Species SpeciesId
         {
             get; set;
         }
+
         [Column("version_id")]
         public long VersionId
         {
             get; set;
         }
+
         [Column("language_id")]
-        public long LanguageId
+        public Enums.Languages LanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
@@ -3451,22 +3864,25 @@ namespace VeekunHelper
     public class PokemonSpeciesName
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
             get; set;
         }
+
         [Column("genus")]
-        public string Genu
+        public string Genus
         {
             get; set;
         }
@@ -3475,15 +3891,17 @@ namespace VeekunHelper
     public class PokemonSpeciesProse
     {
         [Column("pokemon_species_id")]
-        public long PokemonSpeciesId
+        public Enums.Species PokemonSpeciesId
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("form_description")]
         public string FormDescription
         {
@@ -3498,16 +3916,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("stat_id")]
         public long StatId
         {
             get; set;
         }
+
         [Column("base_stat")]
         public long BaseStat
         {
             get; set;
         }
+
         [Column("effort")]
         public long Effort
         {
@@ -3522,11 +3943,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("type_id")]
         public long TypeId
         {
             get; set;
         }
+
         [Column("slot")]
         public long Slot
         {
@@ -3541,11 +3964,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -3560,6 +3985,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
@@ -3574,11 +4000,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -3593,21 +4021,25 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("damage_class_id")]
         public long DamageClassId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("is_battle_only")]
         public bool IsBattleOnly
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -3618,12 +4050,13 @@ namespace VeekunHelper
     public class SuperContestCombo
     {
         [Column("first_move_id")]
-        public long FirstMoveId
+        public Enums.Moves FirstMoveId
         {
             get; set;
         }
+
         [Column("second_move_id")]
-        public long SecondMoveId
+        public Enums.Moves SecondMoveId
         {
             get; set;
         }
@@ -3636,11 +4069,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("flavor_text")]
         public string FlavorText
         {
@@ -3655,6 +4090,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("appeal")]
         public short Appeal
         {
@@ -3669,11 +4105,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("target_type_id")]
         public long TargetTypeId
         {
             get; set;
         }
+
         [Column("damage_factor")]
         public long DamageFactor
         {
@@ -3688,11 +4126,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("game_index")]
         public long GameIndex
         {
@@ -3707,11 +4147,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -3726,16 +4168,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("damage_class_id")]
         public long DamageClassId
         {
@@ -3750,6 +4195,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("pokemon_move_method_id")]
         public long PokemonMoveMethodId
         {
@@ -3764,6 +4210,7 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("region_id")]
         public long RegionId
         {
@@ -3778,16 +4225,19 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {
             get; set;
         }
+
         [Column("generation_id")]
         public long GenerationId
         {
             get; set;
         }
+
         [Column("order")]
         public long Order
         {
@@ -3802,11 +4252,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("local_language_id")]
-        public long LocalLanguageId
+        public Enums.Languages LocalLanguageId
         {
             get; set;
         }
+
         [Column("name")]
         public string Name
         {
@@ -3821,11 +4273,13 @@ namespace VeekunHelper
         {
             get; set;
         }
+
         [Column("version_group_id")]
         public long VersionGroupId
         {
             get; set;
         }
+
         [Column("identifier")]
         public string Identifier
         {

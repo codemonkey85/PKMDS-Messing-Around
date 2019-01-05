@@ -14,7 +14,11 @@ namespace PKMDS_Messing_Around
 
         public const string TestSaveFilesDir = @"Test Save Files";
 
+        private readonly BindingSource _bindingSource = new BindingSource();
+
         public MainForm() => InitializeComponent();
+
+        private void MainForm_Load(object sender, EventArgs e) => dgData.DataSource = _bindingSource;
 
         private void buttonTest_Click(object sender, EventArgs e)
         {
@@ -27,6 +31,8 @@ namespace PKMDS_Messing_Around
             FileStream yellowSaveFileStream = new FileStream(Path.Combine(TestSaveFilesDir, YellowSaveFileName), FileMode.Open, FileAccess.Read);
             YellowSaveFile yellowSaveFileData = new YellowSaveFile(yellowSaveFileStream);
 
+            _bindingSource.DataSource = VeekunDatabase.TestDapper();
+
             //DataRow test = VeekunDatabase.VeekunDataSet.Tables["pokemon_species_names"].Select($"pokemon_species_id = {pokemonSpeciesId} AND local_language_id = {localLangIdEnglish}").First();
             //DataView dataView = new DataView(VeekunDatabase.VeekunDataSet.Tables["pokemon_species_names"], $"pokemon_species_id = {pokemonSpeciesId} AND local_language_id = {localLangIdEnglish}", "", DataViewRowState.CurrentRows);
 
@@ -37,7 +43,11 @@ namespace PKMDS_Messing_Around
             //        row.Field<long>("local_language_id") == localLangIdEnglish)
             //    .Field<string>("name");
 
-            VeekunDatabase.TestDapper();
+            //DataSet veekunDataSet = VeekunDatabase.VeekunDataSet;
+            //VeekunDatabase.TestDapper();
+
+            //dgData.DataSource = test;
+
             //string generatedPoCos = VeekunDatabase.TestGeneratingPoCos();
             //textBoxGeneratedPoCos.Text = generatedPoCos;
 

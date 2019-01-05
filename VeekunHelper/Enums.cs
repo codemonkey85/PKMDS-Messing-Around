@@ -967,7 +967,7 @@ namespace PKMDS_Enums
             Struggle = 165
         }
 
-        public enum Stats
+        public enum RbyStats
         {
             Hp,
             Attack,
