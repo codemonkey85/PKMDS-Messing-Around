@@ -12,7 +12,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -66,7 +66,7 @@ namespace VeekunHelper
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -93,7 +93,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
@@ -114,7 +114,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -135,13 +135,13 @@ namespace VeekunHelper
         }
 
         [Column("short_effect")]
-        public string ShortEffect
+        public string? ShortEffect
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -219,7 +219,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -240,7 +240,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -282,7 +282,7 @@ namespace VeekunHelper
         }
 
         [Column("message")]
-        public string Message
+        public string? Message
         {
             get; set;
         }
@@ -324,7 +324,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -354,7 +354,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -375,7 +375,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -390,7 +390,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -483,19 +483,19 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("short_effect")]
-        public string ShortEffect
+        public string? ShortEffect
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -510,7 +510,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -537,13 +537,13 @@ namespace VeekunHelper
         }
 
         [Column("short_effect")]
-        public string ShortEffect
+        public string? ShortEffect
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -573,13 +573,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -594,7 +594,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -729,7 +729,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -744,7 +744,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -795,7 +795,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -816,7 +816,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -885,7 +885,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -900,7 +900,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -942,7 +942,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -957,7 +957,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1035,7 +1035,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1083,13 +1083,13 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -1131,19 +1131,19 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("flavor")]
-        public string Flavor
+        public string? Flavor
         {
             get; set;
         }
 
         [Column("color")]
-        public string Color
+        public string? Color
         {
             get; set;
         }
@@ -1158,7 +1158,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1179,7 +1179,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1194,7 +1194,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1215,7 +1215,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1251,7 +1251,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1272,7 +1272,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1293,7 +1293,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1314,7 +1314,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1329,7 +1329,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1449,7 +1449,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1464,7 +1464,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1500,7 +1500,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1521,7 +1521,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1542,7 +1542,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1563,7 +1563,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1578,13 +1578,13 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
 
         [Column("formula")]
-        public string Formula
+        public string? Formula
         {
             get; set;
         }
@@ -1605,7 +1605,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1626,7 +1626,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1662,13 +1662,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -1683,7 +1683,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1704,7 +1704,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_summary")]
-        public string FlavorSummary
+        public string? FlavorSummary
         {
             get; set;
         }
@@ -1731,7 +1731,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
@@ -1752,7 +1752,7 @@ namespace VeekunHelper
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -1803,7 +1803,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1824,7 +1824,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1839,7 +1839,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1860,13 +1860,13 @@ namespace VeekunHelper
         }
 
         [Column("short_effect")]
-        public string ShortEffect
+        public string? ShortEffect
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -1881,7 +1881,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -1926,7 +1926,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -1941,19 +1941,19 @@ namespace VeekunHelper
         }
 
         [Column("iso639")]
-        public string Iso639
+        public string? Iso639
         {
             get; set;
         }
 
         [Column("iso3166")]
-        public string Iso3166
+        public string? Iso3166
         {
             get; set;
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2013,7 +2013,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2040,7 +2040,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2082,7 +2082,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2103,7 +2103,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2151,7 +2151,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2166,7 +2166,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2250,13 +2250,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -2271,7 +2271,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2313,7 +2313,7 @@ namespace VeekunHelper
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -2334,13 +2334,13 @@ namespace VeekunHelper
         }
 
         [Column("short_effect")]
-        public string ShortEffect
+        public string? ShortEffect
         {
             get; set;
         }
 
         [Column("effect")]
-        public string Effect
+        public string? Effect
         {
             get; set;
         }
@@ -2385,13 +2385,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -2406,7 +2406,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2427,7 +2427,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_summary")]
-        public string FlavorSummary
+        public string? FlavorSummary
         {
             get; set;
         }
@@ -2454,7 +2454,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
@@ -2556,7 +2556,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2571,7 +2571,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2586,7 +2586,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2607,7 +2607,7 @@ namespace VeekunHelper
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -2649,7 +2649,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2670,13 +2670,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -2691,7 +2691,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2706,7 +2706,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2832,7 +2832,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2868,7 +2868,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2946,7 +2946,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2961,7 +2961,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -2982,7 +2982,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -2997,7 +2997,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3018,13 +3018,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -3060,7 +3060,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3081,7 +3081,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3165,7 +3165,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -3180,7 +3180,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3273,7 +3273,7 @@ namespace VeekunHelper
         }
 
         [Column("time_of_day")]
-        public string TimeOfDay
+        public string? TimeOfDay
         {
             get; set;
         }
@@ -3381,13 +3381,13 @@ namespace VeekunHelper
         }
 
         [Column("form_name")]
-        public string FormName
+        public string? FormName
         {
             get; set;
         }
 
         [Column("pokemon_name")]
-        public string PokemonName
+        public string? PokemonName
         {
             get; set;
         }
@@ -3435,13 +3435,13 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
 
         [Column("form_identifier")]
-        public string FormIdentifier
+        public string? FormIdentifier
         {
             get; set;
         }
@@ -3525,7 +3525,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -3540,7 +3540,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3588,13 +3588,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -3609,7 +3609,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3669,19 +3669,19 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("awesome_name")]
-        public string AwesomeName
+        public string? AwesomeName
         {
             get; set;
         }
 
         [Column("description")]
-        public string Description
+        public string? Description
         {
             get; set;
         }
@@ -3696,7 +3696,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3711,7 +3711,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -3828,7 +3828,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_summary")]
-        public string FlavorSummary
+        public string? FlavorSummary
         {
             get; set;
         }
@@ -3855,7 +3855,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
@@ -3876,13 +3876,13 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
 
         [Column("genus")]
-        public string Genus
+        public string? Genus
         {
             get; set;
         }
@@ -3903,7 +3903,7 @@ namespace VeekunHelper
         }
 
         [Column("form_description")]
-        public string FormDescription
+        public string? FormDescription
         {
             get; set;
         }
@@ -3972,7 +3972,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -3987,7 +3987,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -4008,7 +4008,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -4029,7 +4029,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -4077,7 +4077,7 @@ namespace VeekunHelper
         }
 
         [Column("flavor_text")]
-        public string FlavorText
+        public string? FlavorText
         {
             get; set;
         }
@@ -4155,7 +4155,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -4170,7 +4170,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -4227,7 +4227,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }
@@ -4260,7 +4260,7 @@ namespace VeekunHelper
         }
 
         [Column("name")]
-        public string Name
+        public string? Name
         {
             get; set;
         }
@@ -4281,7 +4281,7 @@ namespace VeekunHelper
         }
 
         [Column("identifier")]
-        public string Identifier
+        public string? Identifier
         {
             get; set;
         }

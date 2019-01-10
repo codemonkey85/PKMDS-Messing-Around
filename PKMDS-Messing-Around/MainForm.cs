@@ -20,7 +20,7 @@ namespace PKMDS_Messing_Around
 
         private void MainForm_Load(object sender, EventArgs e) => dgData.DataSource = _bindingSource;
 
-        private void buttonTest_Click(object sender, EventArgs e)
+        private void ButtonTest_Click(object sender, EventArgs e)
         {
             FileStream redSaveFileStream = new FileStream(Path.Combine(TestSaveFilesDir, RedSaveFileName), FileMode.Open, FileAccess.Read);
             RedBlueSaveFile redSaveFileData = new RedBlueSaveFile(redSaveFileStream);

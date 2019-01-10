@@ -41,7 +41,7 @@
             this.buttonTest.TabIndex = 0;
             this.buttonTest.Text = "Test";
             this.buttonTest.UseVisualStyleBackColor = true;
-            this.buttonTest.Click += new System.EventHandler(this.buttonTest_Click);
+            this.buttonTest.Click += new System.EventHandler(this.ButtonTest_Click);
             // 
             // dgData
             // 

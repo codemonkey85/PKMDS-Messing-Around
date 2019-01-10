@@ -7,13 +7,13 @@ namespace PKMDS.Extensions
 {
     public static class EnumExtension
     {
-        public static string GetEnumDescription<T>(this T element) where T : Enum // needs C# 7.3
+        public static string? GetEnumDescription<T>(this T element) where T : Enum // needs C# 7.3
         {
             try
             {
                 string elementString = element?.ToString();
-                DescriptionAttribute[] descAttributes = element?.GetType().GetField(elementString)?.GetCustomAttributes(typeof(DescriptionAttribute), false) as DescriptionAttribute[];
-                return descAttributes?.Length > 0 ? descAttributes[0].Description : elementString ?? string.Empty;
+                DescriptionAttribute[]? descAttributes = element?.GetType().GetField(elementString)?.GetCustomAttributes(typeof(DescriptionAttribute), false) as DescriptionAttribute[];
+                return descAttributes?.Length > 0 ? descAttributes?[0].Description : elementString ?? string.Empty;
             }
             catch
             {
@@ -25,7 +25,7 @@ namespace PKMDS.Extensions
         {
             foreach (T enumValue in Enum.GetValues(typeof(T)))
             {
-                yield return new Tuple<T, string>(enumValue, enumValue.GetEnumDescription());
+                yield return new Tuple<T, string?>(enumValue, enumValue.GetEnumDescription());
             }
         }
 
